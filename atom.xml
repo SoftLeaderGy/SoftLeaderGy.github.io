@@ -8,8 +8,72 @@
     <author>
       <name>GuoYang</name>
     </author>
-    <updated>2023-06-15T05:38:11.000Z</updated>
+    <updated>2023-06-17T06:18:49.000Z</updated>
     <category term="java" />
+    <entry>
+        <id>https://softleadergy.github.io/CPU%E9%A3%99%E5%8D%87%E6%8E%92%E6%9F%A5/</id>
+        <title>CPU飙升排查</title>
+        <link rel="alternate" href="https://softleadergy.github.io/CPU%E9%A3%99%E5%8D%87%E6%8E%92%E6%9F%A5/"/>
+        <content type="html">&lt;h1 id=&#34;cpu飙升&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#cpu飙升&#34;&gt;#&lt;/a&gt; CPU 飙升&lt;/h1&gt;
+&lt;p&gt;线上资源 cpu 飙升是我们工作中常见的问题，一篇文章搞定排查方法&lt;/p&gt;
+&lt;h2 id=&#34;一-问题复现&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#一-问题复现&#34;&gt;#&lt;/a&gt; 一、问题复现&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;现在我有两个接口，代码如下&lt;/p&gt;
+&lt;figure class=&#34;highlight java&#34;&gt;&lt;figcaption data-lang=&#34;java&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token annotation punctuation&#34;&gt;@RestController&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;public&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;class&lt;/span&gt; &lt;span class=&#34;token class-name&#34;&gt;CPUCheck&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token annotation punctuation&#34;&gt;@RequestMapping&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#34;/hello&#34;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token keyword&#34;&gt;public&lt;/span&gt; &lt;span class=&#34;token class-name&#34;&gt;String&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;helloWorld&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;      &lt;span class=&#34;token keyword&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#34;hello World&#34;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token annotation punctuation&#34;&gt;@RequestMapping&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#34;/run&#34;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;9&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token keyword&#34;&gt;public&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;void&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;run&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;10&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;      &lt;span class=&#34;token keyword&#34;&gt;while&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token boolean&#34;&gt;true&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;11&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;12&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;      &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;13&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;14&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;代码很简单 接口 1“/hello” 返回 “hello World”，接口 2“/run” 进入死循环，这样就保证了访问接口 2cpu 升高。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;二-测试&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#二-测试&#34;&gt;#&lt;/a&gt; 二、测试&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;我们将项目打包部署在服务器上，并启动&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;../images/CPU%E9%A3%99%E5%8D%87%E6%8E%92%E6%9F%A5_img/view.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;测试接口&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-curl&#34;&gt;curl http://localhost:9901/thing-test/hello
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img data-src=&#34;../images/CPU%E9%A3%99%E5%8D%87%E6%8E%92%E6%9F%A5_img/bVc7E9o-20230617142818168.png&#34; alt=&#34;image.png&#34; /&gt;&lt;/p&gt;
+&lt;h2 id=&#34;三-排查&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#三-排查&#34;&gt;#&lt;/a&gt; 三、排查&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;通过 &lt;code&gt;top&lt;/code&gt;  命令可以查看到有一个 java 进程占用 cpu 资源异常&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;获取 pid 为 &lt;code&gt;32306&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;通过命令查询 &lt;code&gt;tid&lt;/code&gt;&lt;/p&gt;
+&lt;figure class=&#34;highlight shell&#34;&gt;&lt;figcaption data-lang=&#34;Bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;命令：ps &lt;span class=&#34;token parameter variable&#34;&gt;-mp&lt;/span&gt; 【pid】 &lt;span class=&#34;token parameter variable&#34;&gt;-o&lt;/span&gt; THREAD,tid,time&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;实例：ps &lt;span class=&#34;token parameter variable&#34;&gt;-mp&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;32306&lt;/span&gt; &lt;span class=&#34;token parameter variable&#34;&gt;-o&lt;/span&gt; THREAD,tid,time&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img data-src=&#34;../images/CPU%E9%A3%99%E5%8D%87%E6%8E%92%E6%9F%A5_img/bVc7Fau.png&#34; alt=&#34;image.png&#34; /&gt;&lt;/p&gt;
+&lt;ol start=&#34;4&#34;&gt;
+&lt;li&gt;
+&lt;p&gt;可以看到引起 cpu 异常的 tid 是 &lt;code&gt;32327&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;因为现在的 tid &lt;code&gt;32327&lt;/code&gt;  是十进制的，需要将其转化为十六进制&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-she&#34;&gt;命令：printf &amp;quot;%x\n&amp;quot; 【十进制tid】
+实例：printf &amp;quot;%x\n&amp;quot; 32327
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&amp;lt;img src=&amp;quot;../images/CPU 飙升排查_img/bVc7FaD.png&amp;quot; alt=&amp;quot;image.png&amp;quot; style=&amp;quot;zoom: 150%;&amp;quot; /&amp;gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;根据 pid 和 tid 查询导致 cpu 飙升的代码&lt;/p&gt;
+&lt;figure class=&#34;highlight shell&#34;&gt;&lt;figcaption data-lang=&#34;Bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;命令：jstack 【10进制pid】 &lt;span class=&#34;token operator&#34;&gt;|&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;grep&lt;/span&gt; 【16进制tid】 &lt;span class=&#34;token parameter variable&#34;&gt;-A&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;20&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;实例：jstack &lt;span class=&#34;token number&#34;&gt;32306&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;|&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;grep&lt;/span&gt; 7e47 &lt;span class=&#34;token parameter variable&#34;&gt;-A&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;20&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;img data-src=&#34;../images/CPU%E9%A3%99%E5%8D%87%E6%8E%92%E6%9F%A5_img/bVc7Fby-20230617143253173.png&#34; alt=&#34;image.png&#34; /&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img data-src=&#34;../images/CPU%E9%A3%99%E5%8D%87%E6%8E%92%E6%9F%A5_img/bVc7FbL.png&#34; alt=&#34;image.png&#34; /&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;end....&lt;/p&gt;
+</content>
+        <category term="cpu, shell" scheme="https://softleadergy.github.io/tags/cpu-shell/" />
+        <updated>2023-06-17T06:18:49.000Z</updated>
+    </entry>
     <entry>
         <id>https://softleadergy.github.io/xxl-job%E6%90%AD%E5%BB%BA/</id>
         <title>xxl-job搭建</title>
@@ -185,13 +249,5 @@
 </content>
         <category term="xxl-job" scheme="https://softleadergy.github.io/tags/xxl-job/" />
         <updated>2023-06-15T05:38:11.000Z</updated>
-    </entry>
-    <entry>
-        <id>https://softleadergy.github.io/hello-world/</id>
-        <title>Hello World</title>
-        <link rel="alternate" href="https://softleadergy.github.io/hello-world/"/>
-        <content type="html">&lt;p&gt;Welcome to &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL3plc3BpYS50dy9oZXhv&#34;&gt;Hexo&lt;/span&gt;! This is your very first post. Check &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL3plc3BpYS50dy9oZXhvL2RvY3M=&#34;&gt;documentation&lt;/span&gt; to learn how to use.&lt;/p&gt;
-</content>
-        <updated>2013-12-24T09:49:32.000Z</updated>
     </entry>
 </feed>
