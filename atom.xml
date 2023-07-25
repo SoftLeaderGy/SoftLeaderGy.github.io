@@ -23,15 +23,15 @@
 &lt;/blockquote&gt;
 &lt;h1 id=&#34;github创建图床服务器&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#github创建图床服务器&#34;&gt;#&lt;/a&gt; github 创建图床服务器&lt;/h1&gt;
 &lt;h2 id=&#34;创建仓库&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#创建仓库&#34;&gt;#&lt;/a&gt; 创建仓库&lt;/h2&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://cdn.nlark.com/yuque/0/2023/png/13004873/1690162281589-9cfdf2a1-5873-48cd-9037-7676ed2a6f6e.png#averageHue=%230e1219&amp;amp;clientId=ubefa519a-86c9-4&amp;amp;from=paste&amp;amp;height=429&amp;amp;id=u36a42414&amp;amp;originHeight=429&amp;amp;originWidth=742&amp;amp;originalType=binary&amp;amp;ratio=1&amp;amp;rotation=0&amp;amp;showTitle=false&amp;amp;size=46395&amp;amp;status=done&amp;amp;style=none&amp;amp;taskId=u247feef8-5140-464d-8fa7-231bf48eb45&amp;amp;title=&amp;amp;width=742&#34; alt=&#34;image.png&#34; /&gt;&lt;br /&gt;
-&lt;img data-src=&#34;https://cdn.nlark.com/yuque/0/2023/png/13004873/1690162326170-42ceef53-a133-4428-b08a-6373e89492a5.png#averageHue=%2311161c&amp;amp;clientId=ubefa519a-86c9-4&amp;amp;from=paste&amp;amp;height=850&amp;amp;id=uaba901da&amp;amp;originHeight=850&amp;amp;originWidth=934&amp;amp;originalType=binary&amp;amp;ratio=1&amp;amp;rotation=0&amp;amp;showTitle=false&amp;amp;size=117627&amp;amp;status=done&amp;amp;style=none&amp;amp;taskId=u4946d055-d93b-4f0a-9124-cd1f9795421&amp;amp;title=&amp;amp;width=934&#34; alt=&#34;image.png&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://cdn.jsdelivr.net/gh/SoftLeaderGy/Pic@img/img/1690162281589-9cfdf2a1-5873-48cd-9037-7676ed2a6f6e-20230725130909379.png&#34; alt=&#34;image.png&#34; /&gt;&lt;br /&gt;
+&lt;img data-src=&#34;https://cdn.jsdelivr.net/gh/SoftLeaderGy/Pic@img/img/1690162326170-42ceef53-a133-4428-b08a-6373e89492a5-20230725130936104-20230725130952938.png&#34; alt=&#34;image.png&#34; /&gt;&lt;/p&gt;
 &lt;h2 id=&#34;生成token令牌&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#生成token令牌&#34;&gt;#&lt;/a&gt; 生成 token 令牌&lt;/h2&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://cdn.nlark.com/yuque/0/2023/png/13004873/1690162480459-8a55fda6-4db0-4e52-8f9a-e2f385295c69.png#averageHue=%23282d36&amp;amp;clientId=ubefa519a-86c9-4&amp;amp;from=paste&amp;amp;height=723&amp;amp;id=u8cb6dffa&amp;amp;originHeight=723&amp;amp;originWidth=666&amp;amp;originalType=binary&amp;amp;ratio=1&amp;amp;rotation=0&amp;amp;showTitle=false&amp;amp;size=75705&amp;amp;status=done&amp;amp;style=none&amp;amp;taskId=u24c2e14a-c3b8-4a0f-b104-de5b63a8558&amp;amp;title=&amp;amp;width=666&#34; alt=&#34;image.png&#34; /&gt;&lt;br /&gt;
-&lt;img data-src=&#34;https://cdn.nlark.com/yuque/0/2023/png/13004873/1690162528476-55e6e2db-c308-4227-960b-1be095a2c2d6.png#averageHue=%230f1319&amp;amp;clientId=ubefa519a-86c9-4&amp;amp;from=paste&amp;amp;height=648&amp;amp;id=u1d0da8e2&amp;amp;originHeight=648&amp;amp;originWidth=1214&amp;amp;originalType=binary&amp;amp;ratio=1&amp;amp;rotation=0&amp;amp;showTitle=false&amp;amp;size=108239&amp;amp;status=done&amp;amp;style=none&amp;amp;taskId=u254e1429-9d4e-46d5-8368-79fb8a40db1&amp;amp;title=&amp;amp;width=1214&#34; alt=&#34;image.png&#34; /&gt;&lt;br /&gt;
-&lt;img data-src=&#34;https://cdn.nlark.com/yuque/0/2023/png/13004873/1690162590220-2fa05207-c299-4304-8b43-4aa38ba0b97c.png#averageHue=%2313171d&amp;amp;clientId=ubefa519a-86c9-4&amp;amp;from=paste&amp;amp;height=369&amp;amp;id=ub009febc&amp;amp;originHeight=369&amp;amp;originWidth=1206&amp;amp;originalType=binary&amp;amp;ratio=1&amp;amp;rotation=0&amp;amp;showTitle=false&amp;amp;size=91435&amp;amp;status=done&amp;amp;style=none&amp;amp;taskId=u0f745f52-17fa-4349-a497-12bdf79108e&amp;amp;title=&amp;amp;width=1206&#34; alt=&#34;image.png&#34; /&gt;&lt;br /&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://cdn.jsdelivr.net/gh/SoftLeaderGy/Pic@img/img/1690162480459-8a55fda6-4db0-4e52-8f9a-e2f385295c69.png&#34; alt=&#34;image.png&#34; /&gt;&lt;br /&gt;
+&lt;img data-src=&#34;https://cdn.jsdelivr.net/gh/SoftLeaderGy/Pic@img/img/1690162528476-55e6e2db-c308-4227-960b-1be095a2c2d6.png&#34; alt=&#34;image.png&#34; /&gt;&lt;br /&gt;
+&lt;img data-src=&#34;https://cdn.jsdelivr.net/gh/SoftLeaderGy/Pic@img/img/1690162590220-2fa05207-c299-4304-8b43-4aa38ba0b97c.png&#34; alt=&#34;image.png&#34; /&gt;&lt;br /&gt;
  紧接着把这个 repo 全部选上：&lt;br /&gt;
 然后拉到底部，选择创建就行了。&lt;br /&gt;
-&lt;img data-src=&#34;https://cdn.nlark.com/yuque/0/2023/png/13004873/1690162626395-4e7f20a2-414f-4490-a8c8-19e580fd320b.png#averageHue=%23fefefe&amp;amp;clientId=ubefa519a-86c9-4&amp;amp;from=paste&amp;amp;height=111&amp;amp;id=ueb64126e&amp;amp;originHeight=111&amp;amp;originWidth=1222&amp;amp;originalType=binary&amp;amp;ratio=1&amp;amp;rotation=0&amp;amp;showTitle=false&amp;amp;size=7509&amp;amp;status=done&amp;amp;style=none&amp;amp;taskId=u3e4095a0-4103-4086-8e67-26ba2374850&amp;amp;title=&amp;amp;width=1222&#34; alt=&#34;image.png&#34; /&gt;&lt;br /&gt;
+&lt;img data-src=&#34;https://cdn.jsdelivr.net/gh/SoftLeaderGy/Pic@img/img/1690162626395-4e7f20a2-414f-4490-a8c8-19e580fd320b-20230725131143373.png&#34; alt=&#34;image.png&#34; /&gt;&lt;br /&gt;
  这个 Token 是你的服务器（即你的账户下的 github 服务器）的令牌，暂时和你的仓库还没有什么关系。&lt;br /&gt;
 然后创建完以后，就会出现一串 Token 字符串，你把这个 Token 数字复制、保存下来 (可以新创一个 txt 文件，保存到里面)。因为你可能一会儿就见不到了。&lt;/p&gt;
 &lt;h2 id=&#34;使用picgo来实现图片上传&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#使用picgo来实现图片上传&#34;&gt;#&lt;/a&gt; 使用 PicGo 来实现图片上传&lt;/h2&gt;
@@ -44,7 +44,7 @@
 &lt;ul&gt;
 &lt;li&gt;1、选择【图床设置】-&amp;gt;【Github】然后进行配置：&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://cdn.nlark.com/yuque/0/2023/png/13004873/1690162867192-68818820-d3af-4429-948a-a44d51c43199.png#averageHue=%23afcea1&amp;amp;clientId=ubefa519a-86c9-4&amp;amp;from=paste&amp;amp;height=450&amp;amp;id=ua69e6d9a&amp;amp;originHeight=450&amp;amp;originWidth=800&amp;amp;originalType=binary&amp;amp;ratio=1&amp;amp;rotation=0&amp;amp;showTitle=false&amp;amp;size=86291&amp;amp;status=done&amp;amp;style=none&amp;amp;taskId=u8d790561-817c-4a17-be4b-babb9abcdaa&amp;amp;title=&amp;amp;width=800&#34; alt=&#34;image.png&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://cdn.jsdelivr.net/gh/SoftLeaderGy/Pic@img/img/1690162867192-68818820-d3af-4429-948a-a44d51c43199-20230725131158482.png&#34; alt=&#34;image.png&#34; /&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;具体配置方法：
 &lt;ul&gt;
@@ -53,7 +53,7 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://cdn.nlark.com/yuque/0/2023/png/13004873/1690164887946-36ea3fed-912a-4f91-80a8-b37ed525d5b9.png#averageHue=%230f1319&amp;amp;clientId=ubefa519a-86c9-4&amp;amp;from=paste&amp;amp;height=570&amp;amp;id=u50dbe69f&amp;amp;originHeight=570&amp;amp;originWidth=1903&amp;amp;originalType=binary&amp;amp;ratio=1&amp;amp;rotation=0&amp;amp;showTitle=false&amp;amp;size=125719&amp;amp;status=done&amp;amp;style=none&amp;amp;taskId=u5cd52b70-d1e0-4dc7-9fcb-ebd834a3152&amp;amp;title=&amp;amp;width=1903&#34; alt=&#34;image.png&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://cdn.jsdelivr.net/gh/SoftLeaderGy/Pic@img/img/1690164887946-36ea3fed-912a-4f91-80a8-b37ed525d5b9-20230725131211469.png&#34; alt=&#34;image.png&#34; /&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;设定 Token：就是刚刚在 2.2 中我们复制的 Token 字符串。将其填进去即可。&lt;/li&gt;
 &lt;li&gt;设定存储路径，一般来说，它可以是你项目仓库中的一个文件夹。我们这里就统一设置成了 img/&lt;/li&gt;
@@ -65,14 +65,14 @@
 &lt;/blockquote&gt;
 &lt;h3 id=&#34;用picgo上传图片&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#用picgo上传图片&#34;&gt;#&lt;/a&gt; 用 PicGo 上传图片&lt;/h3&gt;
 &lt;p&gt;直接拖拽就可以了。&lt;br /&gt;
-&lt;img data-src=&#34;https://cdn.nlark.com/yuque/0/2023/png/13004873/1690165351118-cb1c1d43-3b9c-4506-bc1b-8f94df26f217.png#averageHue=%23293638&amp;amp;clientId=ubefa519a-86c9-4&amp;amp;from=paste&amp;amp;height=450&amp;amp;id=ucbe14bf3&amp;amp;originHeight=450&amp;amp;originWidth=800&amp;amp;originalType=binary&amp;amp;ratio=1&amp;amp;rotation=0&amp;amp;showTitle=false&amp;amp;size=43929&amp;amp;status=done&amp;amp;style=none&amp;amp;taskId=ud762b6ca-85a6-4b17-a014-ed1ab012125&amp;amp;title=&amp;amp;width=800&#34; alt=&#34;image.png&#34; /&gt;&lt;br /&gt;
+&lt;img data-src=&#34;https://cdn.jsdelivr.net/gh/SoftLeaderGy/Pic@img/img/1690165351118-cb1c1d43-3b9c-4506-bc1b-8f94df26f217-20230725131220932.png&#34; alt=&#34;image.png&#34; /&gt;&lt;br /&gt;
  然后，我们能够在相册中看到我们已经上传的图片，可以查看、复制已经上传的图片的 URL，同时也可以将上传的图片删除。&lt;br /&gt;
-&lt;img data-src=&#34;https://cdn.nlark.com/yuque/0/2023/png/13004873/1690165464434-75ce8fe4-2dc1-44d2-89eb-2c2d8854b487.png#averageHue=%2345413c&amp;amp;clientId=ubefa519a-86c9-4&amp;amp;from=paste&amp;amp;height=675&amp;amp;id=ufe9088b5&amp;amp;originHeight=675&amp;amp;originWidth=1202&amp;amp;originalType=binary&amp;amp;ratio=1&amp;amp;rotation=0&amp;amp;showTitle=false&amp;amp;size=159786&amp;amp;status=done&amp;amp;style=none&amp;amp;taskId=ub94e8673-78ba-48ec-b68c-99f3b255c4f&amp;amp;title=&amp;amp;width=1202&#34; alt=&#34;image.png&#34; /&gt;&lt;br /&gt;
+&lt;img data-src=&#34;https://cdn.jsdelivr.net/gh/SoftLeaderGy/Pic@img/img/1690165464434-75ce8fe4-2dc1-44d2-89eb-2c2d8854b487-20230725131227064.png&#34; alt=&#34;image.png&#34; /&gt;&lt;br /&gt;
  然后，我们也可以对 PicGo 进行一系列的设置。&lt;br /&gt;
 比如启用时间戳，这样在多次上传同一张图片的时候就不会有问题了。&lt;br /&gt;
-&lt;img data-src=&#34;https://cdn.nlark.com/yuque/0/2023/png/13004873/1690165485009-6358b3ac-e1e6-41cd-8deb-88ba590dc4db.png#averageHue=%23423f3b&amp;amp;clientId=ubefa519a-86c9-4&amp;amp;from=paste&amp;amp;height=675&amp;amp;id=u5b916ee2&amp;amp;originHeight=675&amp;amp;originWidth=1202&amp;amp;originalType=binary&amp;amp;ratio=1&amp;amp;rotation=0&amp;amp;showTitle=false&amp;amp;size=58849&amp;amp;status=done&amp;amp;style=none&amp;amp;taskId=u1fdf37ad-5cac-4630-8364-7a14e41a38b&amp;amp;title=&amp;amp;width=1202&#34; alt=&#34;image.png&#34; /&gt;&lt;br /&gt;
+&lt;img data-src=&#34;https://cdn.jsdelivr.net/gh/SoftLeaderGy/Pic@img/img/1690165485009-6358b3ac-e1e6-41cd-8deb-88ba590dc4db-20230725131234568.png&#34; alt=&#34;image.png&#34; /&gt;&lt;br /&gt;
  比如可以开启日志功能 (默认开启)，这样我们上传失败可以通过查看日志来具体查看是什么原因。&lt;br /&gt;
-&lt;img data-src=&#34;https://cdn.nlark.com/yuque/0/2023/png/13004873/1690165502201-8d00361d-ced3-4ef4-af2b-bf204042c20b.png#averageHue=%2345413d&amp;amp;clientId=ubefa519a-86c9-4&amp;amp;from=paste&amp;amp;height=675&amp;amp;id=u056ff075&amp;amp;originHeight=675&amp;amp;originWidth=1202&amp;amp;originalType=binary&amp;amp;ratio=1&amp;amp;rotation=0&amp;amp;showTitle=false&amp;amp;size=61982&amp;amp;status=done&amp;amp;style=none&amp;amp;taskId=ud45085c1-ccd5-4772-8aba-50bb0530823&amp;amp;title=&amp;amp;width=1202&#34; alt=&#34;image.png&#34; /&gt;&lt;/p&gt;
+&lt;img data-src=&#34;https://cdn.jsdelivr.net/gh/SoftLeaderGy/Pic@img/img/1690165502201-8d00361d-ced3-4ef4-af2b-bf204042c20b-20230725131243009.png&#34; alt=&#34;image.png&#34; /&gt;&lt;/p&gt;
 &lt;h2 id=&#34;设置typora实现自动上传&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#设置typora实现自动上传&#34;&gt;#&lt;/a&gt; 设置 Typora 实现自动上传&lt;/h2&gt;
 &lt;p&gt;这一点有个前提，就是你有那种代理呦 hhh，否则，你可能会因为超时，而无法实现自动上传，只能手动将图片移到 PicGo 里面，然后再将 URL 复制到 Typora 里面啦～～&lt;/p&gt;
 &lt;ol&gt;
@@ -81,7 +81,7 @@
 &lt;li&gt;然后按照下图所示，插入图片时选择上传图片。然后在上传服务内选择 PicGo，并选择 PicGo.exe 的路径。&lt;/li&gt;
 &lt;li&gt;这里的可以这样来去配置：&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://cdn.nlark.com/yuque/0/2023/png/13004873/1690165658750-09f0b9d2-616f-4430-8645-24c839a8a371.png#averageHue=%23373737&amp;amp;clientId=ubefa519a-86c9-4&amp;amp;from=paste&amp;amp;height=480&amp;amp;id=u59186708&amp;amp;originHeight=480&amp;amp;originWidth=720&amp;amp;originalType=binary&amp;amp;ratio=1&amp;amp;rotation=0&amp;amp;showTitle=false&amp;amp;size=52432&amp;amp;status=done&amp;amp;style=none&amp;amp;taskId=ub39b80a4-6d6b-440e-8658-a46e673a4d5&amp;amp;title=&amp;amp;width=720&#34; alt=&#34;image.png&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://cdn.jsdelivr.net/gh/SoftLeaderGy/Pic@img/img/1690165658750-09f0b9d2-616f-4430-8645-24c839a8a371-20230725131250904.png&#34; alt=&#34;image.png&#34; /&gt;&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;然后这样的话，你将你的截图直接粘贴到 Typora 里面，你的 Typora 会将链接直接通过 PicGo 上传到你 Github 服务器的仓库中。然后别人和你就都可以通过访问这个链接来实现图片共享啦。这样，你在发送你的文件的时候，图片就不会丢失了。&lt;/p&gt;
 &lt;/blockquote&gt;
