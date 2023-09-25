@@ -16,7 +16,8 @@
         <link rel="alternate" href="https://softleadergy.github.io/redis+lua%E6%8E%A5%E5%8F%A3%E9%99%90%E6%B5%81%E6%96%B9%E6%A1%88/"/>
         <content type="html">&lt;blockquote&gt;
 &lt;p&gt;接口限流是项目中常见的需求，也就是为了限制项目中的某一个接口在一段时间内进行频繁访问，导致系统压力增加。&lt;br /&gt;
-本文主要介绍 &lt;code&gt;redis+lua&lt;/code&gt;  进行接口限流。&lt;/p&gt;
+本文主要介绍 &lt;code&gt;redis+lua&lt;/code&gt;  进行接口限流。&lt;br /&gt;
+demo 地址：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL1NvZnRMZWFkZXJHeS9TdGFydFJlZGlzL3RyZWUvbWFzdGVyL3JlZGlzLWJvb3Qvc3JjL21haW4vamF2YS9jb20veWFuZy9yZWRpc2Jvb3QvY3VycmVudGxpbWl0&#34;&gt;https://github.com/SoftLeaderGy/StartRedis/tree/master/redis-boot/src/main/java/com/yang/redisboot/currentlimit&lt;/span&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h1 id=&#34;搭建&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#搭建&#34;&gt;#&lt;/a&gt; 搭建&lt;/h1&gt;
 &lt;h2 id=&#34;创建一个自定义限流注解&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#创建一个自定义限流注解&#34;&gt;#&lt;/a&gt; 创建一个自定义限流注解&lt;/h2&gt;
