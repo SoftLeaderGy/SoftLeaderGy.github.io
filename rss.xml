@@ -20,7 +20,7 @@
             <category term="redis + lua" scheme="https://softleadergy.github.io/tags/redis-lua/" />
             <pubDate>Mon, 25 Sep 2023 20:09:12 +0800</pubDate>
             <description><![CDATA[ &lt;blockquote&gt;
-&lt;p&gt;接口限流是项目中常见的需求，也就是为了限制项目中的某一个接口在一段时间没进行频繁访问，导致我们系统崩溃。&lt;br /&gt;
+&lt;p&gt;接口限流是项目中常见的需求，也就是为了限制项目中的某一个接口在一段时间内进行频繁访问，导致系统压力增加。&lt;br /&gt;
 本文主要介绍 &lt;code&gt;redis+lua&lt;/code&gt;  进行接口限流。&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h1 id=&#34;搭建&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#搭建&#34;&gt;#&lt;/a&gt; 搭建&lt;/h1&gt;
